@@ -15,7 +15,7 @@
 -> If such one exists, find out if the remainder of the word is a compound word also. 
 -> If so, then this word is the longest compound word, otherwise, repeat these steps.
 ### Implementation
--> I have made a class "Solve" which contains all the functions required by the programm. 
+-> I have made a class "Solve" which contains all the functions required by the program.
 -> Then I write the code to read from the file which contains the input.
 -> Now I store that input in a vector "result".
 -> Then I made a function "Longest_word_finder" which prints the longest and  second longest compounded word.
