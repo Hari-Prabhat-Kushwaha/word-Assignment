@@ -21,7 +21,7 @@
 -> Then I made a function "Longest_word_finder" which prints the longest and  second longest compounded word. <br />
 
 ### Overview 
--> I used Trie data structure its a special tree that stores strings. Trie supports search, insert and delete operations in O(n) time where n is length of word. <br />
+-> I used Trie data structure its a special tree that stores strings.The complexity of creating a trie is O(W*L), where W is the number of words, and L is an average      length of the word: you need to perform L lookups on the average for each of the W words in the set. <br /> and sorting time complexity is O(WlogW).
 -> Initially I called "Longest_word_finder" function through the Solution class and  the words in a trie and then sort the vector so that we have the longest words at    the starting and the smallest words at the end of the vector which will eventually help in finding our answer. In the Longest_word_finder function we made two          strings Longest and second longest compounded word. <br />
 -> Now I iterate in the vector which stores all the input string so that I can access all the words. And then in loop I called a function "obj" which mark the flag as    false of the current word. <br />
 -> After that I called a function "isformed", which will search whether the given word can be formed by using two or more words from all the given words. <br />
