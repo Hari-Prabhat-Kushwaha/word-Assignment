@@ -9,26 +9,26 @@
 6) Change input file name (input_01.txt or input_02.txt) as required in program in line 145.
 
 ### Approach
--> Sort all the words given through the standard input in ascending order in terms of their length (using a custom Comparator).
--> Then,Remove the longest word from the sorted list of words. 
--> Find the shortest prefix of this word that is a compound word. 
--> If such one exists, find out if the remainder of the word is a compound word also. 
--> If so, then this word is the longest compound word, otherwise, repeat these steps.
+-> Sort all the words given through the standard input in ascending order in terms of their length (using a custom Comparator). <br />
+-> Then,Remove the longest word from the sorted list of words.  <br />
+-> Find the shortest prefix of this word that is a compound word.  <br />
+-> If such one exists, find out if the remainder of the word is a compound word also. <br /> 
+-> If so, then this word is the longest compound word, otherwise, repeat these steps. <br />
 ### Implementation
--> I have made a class "Solve" which contains all the functions required by the program.
--> Then I write the code to read from the file which contains the input.
--> Now I store that input in a vector "result".
--> Then I made a function "Longest_word_finder" which prints the longest and  second longest compounded word.
+-> I have made a class "Solve" which contains all the functions required by the program. <br />
+-> Then I write the code to read from the file which contains the input. <br />
+-> Now I store that input in a vector "result". <br />
+-> Then I made a function "Longest_word_finder" which prints the longest and  second longest compounded word. <br />
 
 ### Overview 
--> I used Trie data structure its a special tree that stores strings. Trie supports search, insert and delete operations in O(n) time where n is length of word.
--> Initially I called "Longest_word_finder" function through the Solution class and  the words in a trie and then sort the vector so that we have the longest words at the starting and the smallest words at the end of the vector which will eventually help in finding our answer. In the Longest_word_finder function we made two strings w and pounded word and second longest compounded word.
--> Now I iterate in the vector which stores all the input string so that I can access all the words. And then in loop I called a function "obj" which mark the flag as false of the current word.
+-> I used Trie data structure its a special tree that stores strings. Trie supports search, insert and delete operations in O(n) time where n is length of word. <br />
+-> Initially I called "Longest_word_finder" function through the Solution class and  the words in a trie and then sort the vector so that we have the longest words at the starting and the smallest words at the end of the vector which will eventually help in finding our answer. In the Longest_word_finder function we made two strings Longest and second longest compounded word. <br />
+-> Now I iterate in the vector which stores all the input string so that I can access all the words. And then in loop I called a function "obj" which mark the flag as false of the current word. <br />
 
--> After that I called a function "isformed", which will search whether the given word can be formed by using two or more words from all the given words.
--> If the function "isformed" return true, then that word would be a possible answer.
--> At last I call function "initialize" to mark the flag of the given word as true again. 
--> Then I print both the strings.
+-> After that I called a function "isformed", which will search whether the given word can be formed by using two or more words from all the given words. <br />
+-> If the function "isformed" return true, then that word would be a possible answer. <br />
+-> At last I call function "initialize" to mark the flag of the given word as true again.  <br />
+-> Then I print both the strings. <br />
 
 
 
